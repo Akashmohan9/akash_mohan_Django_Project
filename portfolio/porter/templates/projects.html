@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block body %}
+<style>
+  .project-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+  }
+  .project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 6px ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .project h3 {
+    margin-top: 0;
+    color: #007acc;
+  }
+  .project p {
+    font-size: 16px;
+    color: #333;
+  }
+  .project a {
+    text-decoration: none;
+    color: white;
+    background-color: #007acc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .project a:hover {
+    background-color: #005b99;
+  }
+</style>
+
+<div class="project-container">
+  <div class="project">
+    <h3>Shopping Cart Web App</h3>
+    <p>A full-stack e-commerce platform using Django and Django REST Framework. Features include product listings, cart, user login, and admin dashboard.</p>
+    <a href="https://github.com/yourusername/shopping-cart" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project">
+    <h3>Online Job Portal</h3>
+    <p>A platform for job seekers and employers. Users can post jobs, apply, and manage profiles. Built with Django and Bootstrap.</p>
+    <a href="https://github.com/yourusername/job-portal" target="_blank">View on GitHub</a>
+  </div>
+</div>
+{% endblock body %}

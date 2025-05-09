@@ -1,6 +1,7 @@
 #from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
+from porter.models import contact
 
 # Create your views here.
 
@@ -37,3 +38,12 @@ def qualifications(request):
 def projects(request):
     return render(request,'projects.html')
     # return HttpResponse('This is About My Projects ')
+
+def contact(request):
+    if request.method== "POST":
+        Name=request.POST.get('Name')
+        Email=request.POST.get('email')
+        Phone=request.POST.get('phone')
+        Message=request.POST.get('message')
+        contact =contact(Name=Name,Email=Email,Phone=Phone,Message=Message)
+    return render(request,'contact.html')    

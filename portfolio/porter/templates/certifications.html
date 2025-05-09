@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Certifications{% endblock title %}
+
+{% block body %}
+<section style="padding: 40px; max-width: 1000px; margin: auto; font-family: Arial, sans-serif;">
+    <h1 style="font-size: 2rem; color: #222; text-align: center;">My Certifications</h1>
+    <p style="text-align: center; color: #555; margin-top: 10px;">
+        Below are some of the certifications I've earned through self-learning and professional development.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px;">
+        <!--
+        <div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center;">
+            <img src="{% static 'certificates/python.jpg' %}" alt="Python Certificate" style="width: 100%; height: auto; border-radius: 6px;">
+            <p style="margin-top: 10px; font-weight: bold;">Python for Beginners</p>
+        </div>
+    -->
+
+        <!-- Certificate 2 -->
+        <div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center;">
+            <img src="{% static 'certificates/django.jpg' %}" alt="Django Certificate" style="width: 100%; height: auto; border-radius: 6px;">
+            <p style="margin-top: 10px; font-weight: bold;">Python Full Stack</p>
+        </div>
+    
+
+        <!-- Certificate 3 -->
+         <!--
+        <div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center;">
+            <img src="{% static 'certificates/api.jpg' %}" alt="REST API Certificate" style="width: 100%; height: auto; border-radius: 6px;">
+            <p style="margin-top: 10px; font-weight: bold;">Building RESTful APIs</p>
+        </div>
+    -->
+    </div>
+</section>
+{% endblock body %}
+
